@@ -1,0 +1,275 @@
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0%;
+  margin: 0%;
+  background-color: #12181b;
+  font-family: cursive;
+  text-align: center;
+}
+
+.layout {
+  color: #b2becd;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: cursive;
+  font-weight: 400;
+  padding-top: 5%;
+}
+/* .a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 25px;
+} */
+
+ /* Post */
+
+.homePage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+
+.trash {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  color: #12181b;
+  transition: 0.3s ease-in-out;
+}
+.trash:hover {
+  font-size: 25px;
+}
+
+.edit {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  color: #12181b;
+  transition: 0.3s ease-in-out;
+}
+
+.edit-post {
+  color: #12181b;
+}
+
+.edit:hover {
+  font-size: 25px;
+}
+
+
+
+
+.dropdown {
+  display: none;
+}
+
+ /* Dropdown  */
+
+@media screen and (max-width:769px){
+
+  .homePage .post {
+    width: 75%;
+    margin-left: 11%;
+  }
+  
+
+  .layout{
+    width: 85%;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-right: 25%;
+  }
+  .cat {
+    display: inline-block;
+    color: #12181b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid #b2becd;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #b2becd;
+  }
+  
+  .cat:hover {
+    color: #b2becd;
+    background-color:#12181b ;
+  }
+
+  .dropdown-content {
+    margin-left: 50px;
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+
+  .dropdown-content .content {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0 5px;
+    padding: 12px 16px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdown-content .content:hover {background-color: #f1f1f1;}
+
+  .list {
+    display: none;
+  }
+}
+
+
+
+.list {
+  margin-top: 100px;
+  margin-right: 5%;
+}
+.btn {
+  padding: 10px;
+  color: #12181b;
+  font-size: 17px;
+  font-weight: 700;
+  background-color: #b2becd;
+  cursor: pointer;
+  border: 1px solid #b2becd;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  color: #b2becd;
+  background-color: #12181b;
+}
+
+.hr { 
+  border: 0;
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(95, 95, 95, 0.75), rgba(201, 201, 201, 0));
+}
+
+
+.found{
+  font-size: 30px;
+  color: #b2becd;
+  position: relative;
+  padding-left: 25%;
+}
+
+
+
+
+/* Post */
+
+
+.containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.card__image {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #b2becd;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+background: linear-gradient(to right, #b2becd, #ECE9E6);
+transition: 0.4s ease-in-out;
+}
+
+.card:hover {
+  padding: 2%;
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.read {
+  background-color: #12181b;
+  text-decoration: none;
+  color: #b2becd;
+  padding: 7px 13px;
+  border-radius: 10px;
+  border: 1px solid #12181b;
+  transition: 0.3s ease-in-out;
+  width: fit-content;
+  float: left;
+}
+
+.read:hover {
+  padding: 10px 17px;
+  background-color: #b2becd;
+  color: #12181b;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+.extra{
+  display: flex;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  gap: 10px;
+}

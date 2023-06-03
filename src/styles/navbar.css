@@ -1,0 +1,114 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2a2e35;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+}
+.navbar {
+    text-decoration: none;
+    color: #b2becd;
+    transition: color 0.3s;
+    cursor: pointer;
+    font-family: "cubano",sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navbar:hover{
+    color: #f8f8f8;
+}
+
+.icon {
+    display: none;
+}
+
+.icon i {
+    color: #b2becd;
+    align-items: center; 
+}
+
+@media screen and (max-width:769px){
+
+    .nav1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 80px;
+        right: -310px;
+        width: 300px;
+        height: 120px;
+        background-color: #2a2e35;
+        color: #b2becd;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+    }
+    #login {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 100px;
+        right: -310px;
+        width: 300px;
+        height: 50px;
+        background-color: #2a2e35;
+        color: #b2becd;
+        padding: 20px 0 0 10px;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+
+    }
+    #login-active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        top: 100px;
+        right: 0px;
+        width: 200px;
+        height: 50px;
+        background-color: #2a2e35;
+        color: #b2becd;
+        padding: 20px 0 0 10px;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+
+    }
+    .navbar-active {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: absolute;
+        top: 80px;
+        right: 0px;
+        width: 200px;
+        height: 120px;
+        background-color: #2a2e35;
+        color: #b2becd;
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+        z-index: 999;
+    }
+    .icon {
+        display: block;
+    }
+    #nav1 li {
+        margin-bottom: 25px;
+    }
+    .icon i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
